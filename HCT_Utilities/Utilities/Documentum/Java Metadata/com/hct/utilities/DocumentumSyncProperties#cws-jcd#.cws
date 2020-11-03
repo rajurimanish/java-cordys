@@ -1,0 +1,191 @@
+
+<JavaCallDefinition
+	xmlns:cws="http://schemas.cordys.com/cws/1.0"
+	type="com.cordys.javacall.JavaCallDefinition"
+	RuntimeDocumentID="00155D71-DB54-A1EA-B920-17124309B826">
+	<DocumentID>00155D71-DB54-A1EA-B920-171243097826</DocumentID>
+	<Name>DocumentumSyncProperties</Name>
+	<Description>DocumentumSyncProperties</Description>
+	<CreatedBy>Appworks Admin</CreatedBy>
+	<CreationDate>2020-08-22T14:10:30.02</CreationDate>
+	<Notes/>
+	<FullClassNames></FullClassNames>
+	<JarFileList>D:\Program Files\OpenText\AppWorksPlatform\defaultInst\CustomJars\DocumentumServices-1.0-SNAPSHOT.jar</JarFileList>
+	<Classes/>
+	<JavaArchives>
+		<JavaArchive
+			type="com.cordys.javacall.JavaArchive"
+			RuntimeDocumentID="00155D71-DB54-A1EA-BFF4-AB35EA2A3829">
+			<DocumentID>00155D71-DB54-A1EA-BFF4-AB35EA29F829</DocumentID>
+			<Name>DocumentumServices-1.0-SNAPSHOT.jar</Name>
+			<Description/>
+			<CreatedBy>Appworks Admin</CreatedBy>
+			<CreationDate>2020-09-26T08:31:30.694</CreationDate>
+			<Notes/>
+			<ArchiveLastModifiedDate>1600759107687</ArchiveLastModifiedDate>
+			<ArchivePath>D:/Program Files/OpenText/AppWorksPlatform/defaultInst/CustomJars/DocumentumServices-1.0-SNAPSHOT.jar</ArchivePath>
+			<Classes>
+				<JavaClass
+					type="com.cordys.javacall.JavaClass"
+					RuntimeDocumentID="00155D71-DB54-A1EA-BFF4-AB35EA2AB829">
+					<DocumentID>00155D71-DB54-A1EA-BFF4-AB35EA2A7829</DocumentID>
+					<Name>Test</Name>
+					<Description>Test</Description>
+					<CreatedBy>Appworks Admin</CreatedBy>
+					<CreationDate>2020-09-26T08:31:30.694</CreationDate>
+					<Notes/>
+					<fullyQualifiedName></fullyQualifiedName>
+					<JavaArchive>
+						<uri
+							id="00155D71-DB54-A1EA-BFF4-AB35EA29F829"
+						/>
+					</JavaArchive>
+					<JavaCallDefinition/>
+					<JavaMethods/>
+					<JavaPackage/>
+				</JavaClass>
+			</Classes>
+			<JavaCallDefinition>
+				<uri
+					id="00155D71-DB54-A1EA-B920-171243097826"
+				/>
+			</JavaCallDefinition>
+			<Packages>
+				<JavaPackage
+					type="com.cordys.javacall.JavaPackage"
+					RuntimeDocumentID="00155D71-DB54-A1EA-BFF4-AB35EA2B3829">
+					<DocumentID>00155D71-DB54-A1EA-BFF4-AB35EA2AF829</DocumentID>
+					<Name>com</Name>
+					<Description>com</Description>
+					<CreatedBy>Appworks Admin</CreatedBy>
+					<CreationDate>2020-09-26T08:31:30.694</CreationDate>
+					<Notes/>
+					<Classes/>
+					<JavaArchive>
+						<uri
+							id="00155D71-DB54-A1EA-BFF4-AB35EA29F829"
+						/>
+					</JavaArchive>
+					<Packages>
+						<JavaPackage
+							type="com.cordys.javacall.JavaPackage"
+							RuntimeDocumentID="00155D71-DB54-A1EA-BFF4-AB35EA2BB829">
+							<DocumentID>00155D71-DB54-A1EA-BFF4-AB35EA2B7829</DocumentID>
+							<Name>appworkstips</Name>
+							<Description>appworkstips</Description>
+							<CreatedBy>Appworks Admin</CreatedBy>
+							<CreationDate>2020-09-26T08:31:30.695</CreationDate>
+							<Notes/>
+							<Classes/>
+							<JavaArchive/>
+							<Packages>
+								<JavaPackage
+									type="com.cordys.javacall.JavaPackage"
+									RuntimeDocumentID="00155D71-DB54-A1EA-BFF4-AB35EA2C3829">
+									<DocumentID>00155D71-DB54-A1EA-BFF4-AB35EA2BF829</DocumentID>
+									<Name>services</Name>
+									<Description>services</Description>
+									<CreatedBy>Appworks Admin</CreatedBy>
+									<CreationDate>2020-09-26T08:31:30.693</CreationDate>
+									<Notes/>
+									<Classes/>
+									<JavaArchive/>
+									<Packages>
+										<JavaPackage
+											type="com.cordys.javacall.JavaPackage"
+											RuntimeDocumentID="00155D71-DB54-A1EA-BFF4-AB35EA2CB829">
+											<DocumentID>00155D71-DB54-A1EA-BFF4-AB35EA2C7829</DocumentID>
+											<Name>documentum</Name>
+											<Description>documentum</Description>
+											<CreatedBy>Appworks Admin</CreatedBy>
+											<CreationDate>2020-09-26T08:31:30.695</CreationDate>
+											<Notes/>
+											<Classes>
+												<JavaClass
+													type="com.cordys.javacall.JavaClass"
+													RuntimeDocumentID="00155D71-DB54-A1EA-BFF4-AB35EA2D3829">
+													<DocumentID>00155D71-DB54-A1EA-BFF4-AB35EA2CF829</DocumentID>
+													<Name>DocumentumServices</Name>
+													<Description>DocumentumServices</Description>
+													<CreatedBy>Appworks Admin</CreatedBy>
+													<CreationDate>2020-09-26T08:31:30.694</CreationDate>
+													<Notes/>
+													<fullyQualifiedName>com.appworkstips.services.documentum.DocumentumServices</fullyQualifiedName>
+													<JavaArchive>
+														<uri	id="00155D71-DB54-A1EA-BFF4-AB35EA29F829"
+														/>
+													</JavaArchive>
+													<JavaCallDefinition/>
+													<JavaMethods/>
+													<JavaPackage>
+														<uri	id="00155D71-DB54-A1EA-BFF4-AB35EA2C7829"
+														/>
+													</JavaPackage>
+												</JavaClass>
+											</Classes>
+											<JavaArchive/>
+											<Packages>
+												<JavaPackage
+													type="com.cordys.javacall.JavaPackage"
+													RuntimeDocumentID="00155D71-DB54-A1EA-BFF4-AB35EA2DB829">
+													<DocumentID>00155D71-DB54-A1EA-BFF4-AB35EA2D7829</DocumentID>
+													<Name>dao</Name>
+													<Description>dao</Description>
+													<CreatedBy>Appworks Admin</CreatedBy>
+													<CreationDate>2020-09-26T08:31:30.694</CreationDate>
+													<Notes/>
+													<Classes>
+														<JavaClass	type="com.cordys.javacall.JavaClass"	RuntimeDocumentID="00155D71-DB54-A1EA-BFF4-AB35EA2E3829">	<DocumentID>00155D71-DB54-A1EA-BFF4-AB35EA2DF829</DocumentID>	<Name>DocumentumDAO</Name>	<Description>DocumentumDAO</Description>	<CreatedBy>Appworks Admin</CreatedBy>	<CreationDate>2020-09-26T08:31:30.694</CreationDate>	<Notes/>	<fullyQualifiedName>com.appworkstips.services.documentum.dao.DocumentumDAO</fullyQualifiedName>	<JavaArchive>
+		<uri
+				id="00155D71-DB54-A1EA-BFF4-AB35EA29F829"
+		/>	</JavaArchive>	<JavaCallDefinition/>	<JavaMethods/>	<JavaPackage>
+		<uri
+				id="00155D71-DB54-A1EA-BFF4-AB35EA2D7829"
+		/>	</JavaPackage>
+														</JavaClass>
+														<JavaClass	type="com.cordys.javacall.JavaClass"	RuntimeDocumentID="00155D71-DB54-A1EA-BFF4-AB35EA2EB829">	<DocumentID>00155D71-DB54-A1EA-BFF4-AB35EA2E7829</DocumentID>	<Name>IDocumentumDAO</Name>	<Description>IDocumentumDAO</Description>	<CreatedBy>Appworks Admin</CreatedBy>	<CreationDate>2020-09-26T08:31:30.694</CreationDate>	<Notes/>	<fullyQualifiedName>com.appworkstips.services.documentum.dao.IDocumentumDAO</fullyQualifiedName>	<JavaArchive>
+		<uri
+				id="00155D71-DB54-A1EA-BFF4-AB35EA29F829"
+		/>	</JavaArchive>	<JavaCallDefinition/>	<JavaMethods/>	<JavaPackage>
+		<uri
+				id="00155D71-DB54-A1EA-BFF4-AB35EA2D7829"
+		/>	</JavaPackage>
+														</JavaClass>
+													</Classes>
+													<JavaArchive/>
+													<Packages/>
+												</JavaPackage>
+												<JavaPackage
+													type="com.cordys.javacall.JavaPackage"
+													RuntimeDocumentID="00155D71-DB54-A1EA-BFF4-AB35EA2F3829">
+													<DocumentID>00155D71-DB54-A1EA-BFF4-AB35EA2EF829</DocumentID>
+													<Name>utils</Name>
+													<Description>utils</Description>
+													<CreatedBy>Appworks Admin</CreatedBy>
+													<CreationDate>2020-09-26T08:31:30.695</CreationDate>
+													<Notes/>
+													<Classes>
+														<JavaClass	type="com.cordys.javacall.JavaClass"	RuntimeDocumentID="00155D71-DB54-A1EA-BFF4-AB35EA2FB829">	<DocumentID>00155D71-DB54-A1EA-BFF4-AB35EA2F7829</DocumentID>	<Name>PropertiesUtils</Name>	<Description>PropertiesUtils</Description>	<CreatedBy>Appworks Admin</CreatedBy>	<CreationDate>2020-09-26T08:31:30.695</CreationDate>	<Notes/>	<fullyQualifiedName>com.appworkstips.services.documentum.utils.PropertiesUtils</fullyQualifiedName>	<JavaArchive>
+		<uri
+				id="00155D71-DB54-A1EA-BFF4-AB35EA29F829"
+		/>	</JavaArchive>	<JavaCallDefinition/>	<JavaMethods/>	<JavaPackage>
+		<uri
+				id="00155D71-DB54-A1EA-BFF4-AB35EA2EF829"
+		/>	</JavaPackage>
+														</JavaClass>
+													</Classes>
+													<JavaArchive/>
+													<Packages/>
+												</JavaPackage>
+											</Packages>
+										</JavaPackage>
+									</Packages>
+								</JavaPackage>
+							</Packages>
+						</JavaPackage>
+					</Packages>
+				</JavaPackage>
+			</Packages>
+		</JavaArchive>
+	</JavaArchives>
+</JavaCallDefinition>

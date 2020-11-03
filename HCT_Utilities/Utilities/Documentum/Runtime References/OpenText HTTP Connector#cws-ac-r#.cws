@@ -1,0 +1,34 @@
+
+<ApplicationConnectorRuntime
+	xmlns:cws="http://schemas.cordys.com/cws/1.0"
+	type="com.cordys.applicationconnector.ApplicationConnectorRuntime"
+	typeVersion="0019B981-E9E3-11DF-FAD3-F797D376BD43"
+	RuntimeDocumentID="00155D71-DB54-A1EA-BC00-1D152BE87826">
+	<DocumentID>00155D71-DB54-A1EA-BC00-1D152BE83826</DocumentID>
+	<Name>OpenText HTTP Connector</Name>
+	<Description>OpenText HTTP Connector</Description>
+	<CreatedBy>Appworks Admin</CreatedBy>
+	<CreationDate>2020-09-06T05:23:25.144</CreationDate>
+	<Notes/>
+	<BinaryReferenceInfo></BinaryReferenceInfo>
+	<ISVPName></ISVPName>
+	<ImplementationClass>com.opentext.applicationconnector.httpconnector.HttpConnector</ImplementationClass>
+	<RuntimeInstanceLevel></RuntimeInstanceLevel>
+	<RuntimeKey>/Cordys/WCP/Application Connector/com.opentext.applicationconnector.httpconnector.HttpConnector</RuntimeKey>
+	<PackageInformation>
+		<CordysBinaryReferenceCAPInfo
+			type="com.cordys.cws.binaryreference.CordysBinaryReferenceCAPInfo"
+			RuntimeDocumentID="00155D71-DB54-A1EA-BC00-1D152BE7F826">
+			<DocumentID>00155D71-DB54-A1EA-BC00-1D152BE7B826</DocumentID>
+			<Name>Untitled CordysBinaryReferenceCAPInfo</Name>
+			<Description>Untitled CordysBinaryReferenceCAPInfo</Description>
+			<CreatedBy>Appworks Admin</CreatedBy>
+			<CreationDate>2020-09-06T05:23:25.144</CreationDate>
+			<Notes/>
+			<ArtifactID>F8B156CF-E181-11E4-FBB9-2E099E0BF9B3</ArtifactID>
+			<CAPID>d0df9a40-accb-11e5-e0a4-68baceeeb2b0</CAPID>
+			<CAPName>OpenText HTTP Connector</CAPName>
+			<CAPVersion>ver20.2build40</CAPVersion>
+		</CordysBinaryReferenceCAPInfo>
+	</PackageInformation>
+</ApplicationConnectorRuntime>

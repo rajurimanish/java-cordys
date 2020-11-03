@@ -1,0 +1,23 @@
+
+<TranslatedText
+	xmlns:cws="http://schemas.cordys.com/cws/1.0"
+	type="com.cordys.translation.TranslatedText"
+	RuntimeDocumentID="00155D71-DB54-A1EA-BC08-6FF487B6B826">
+	<DocumentID>00155D71-DB54-A1EA-BC08-6FF487B67826</DocumentID>
+	<Name>00155D71-DB54-A1EA-BC08-6FF487B67826</Name>
+	<Description>Catch Exception</Description>
+	<CreatedBy>Appworks Admin</CreatedBy>
+	<CreationDate>2020-09-06T09:20:29.852</CreationDate>
+	<Notes/>
+	<Text>Catch Exception</Text>
+	<Language>
+		<uri
+			id="00155D71-DB54-A1EA-B920-324240143826"
+		/>
+	</Language>
+	<TextIdentifier>
+		<uri
+			id="00155D71-DB54-A1EA-BC08-6FF487B5F826"
+		/>
+	</TextIdentifier>
+</TranslatedText>

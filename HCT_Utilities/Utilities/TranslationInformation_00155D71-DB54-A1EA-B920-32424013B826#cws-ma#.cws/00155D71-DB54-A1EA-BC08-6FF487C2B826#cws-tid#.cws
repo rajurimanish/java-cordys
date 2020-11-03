@@ -1,0 +1,24 @@
+
+<TextIdentifier
+	xmlns:cws="http://schemas.cordys.com/cws/1.0"
+	type="com.cordys.translation.TextIdentifier"
+	typeVersion="55890f21-u239-76j6-988a-92j7opq6ws09"
+	RuntimeDocumentID="00155D71-DB54-A1EA-BC08-6FF487C2F826">
+	<DocumentID>00155D71-DB54-A1EA-BC08-6FF487C2B826</DocumentID>
+	<Name>00155D71-DB54-A1EA-BC08-6FF487C2B826</Name>
+	<Description>LinkAndCreate</Description>
+	<CreatedBy>Appworks Admin</CreatedBy>
+	<CreationDate>2020-09-06T09:19:56.947</CreationDate>
+	<Notes/>
+	<DefaultText>LinkAndCreate</DefaultText>
+	<TranslationInformation>
+		<uri
+			id="00155D71-DB54-A1EA-B920-324240133826"
+		/>
+	</TranslationInformation>
+	<Translations>
+		<uri
+			id="00155D71-DB54-A1EA-BC08-6FF487C33826"
+		/>
+	</Translations>
+</TextIdentifier>

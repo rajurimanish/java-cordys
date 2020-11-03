@@ -1,0 +1,103 @@
+
+<Project
+	xmlns:cws="http://schemas.cordys.com/cws/1.0"
+	type="com.cordys.cws.documenttypes.project.Project"
+	typeVersion="0019B980-5ADC-71DF-9C5A-1C9DE0779704"
+	RuntimeDocumentID="00155D71-DB54-A1EA-B920-32424012F826">
+	<DocumentID>00155D71-DB54-A1EA-B920-32424012B826</DocumentID>
+	<Name>Utilities</Name>
+	<Description>Utilities</Description>
+	<CreatedBy>Appworks Admin</CreatedBy>
+	<CreationDate>2020-08-22T14:07:22.234</CreationDate>
+	<Notes/>
+	<NamespacePrefix></NamespacePrefix>
+	<Configurations/>
+	<ISVPackageInfo>
+		<ISVPackageInfo
+			type="com.cordys.cws.packaging.isvp.ISVPackageInfo"
+			typeVersion="00215A62-2E6A-11E2-EEB7-903C43CFF084"
+			RuntimeDocumentID="00155D71-DB54-A1EA-B920-324240167826">
+			<DocumentID>00155D71-DB54-A1EA-B920-324240163826</DocumentID>
+			<Name>HCT Utilities</Name>
+			<Description>HCT Utilities</Description>
+			<CreatedBy>Appworks Admin</CreatedBy>
+			<CreationDate>2020-08-22T14:07:22.234</CreationDate>
+			<Notes/>
+			<BuildNumber>11</BuildNumber>
+			<GenerateModelPackage>false</GenerateModelPackage>
+			<ISVPackageFileName>HCT Utilities 1.0.11</ISVPackageFileName>
+			<ISVPackageOwner>HCT</ISVPackageOwner>
+			<PackageForRuntime>true</PackageForRuntime>
+			<PostISVLoaderInformation/>
+			<Product>Utilities</Product>
+			<SupportedDeploymentSpaces
+				xmlns:cws="http://schemas.cordys.com/cws/1.0"
+				cws:type="collection:string">
+				<cws:item>SHARED</cws:item>
+			</SupportedDeploymentSpaces>
+			<Version>1.0</Version>
+			<LicenseAgreement/>
+			<ThirdPartyAgreement/>
+		</ISVPackageInfo>
+	</ISVPackageInfo>
+	<RuntimeQualifiedName/>
+	<SourceFolder>
+		<uri
+			id="00155D71-DB54-A1EA-B920-32424015B826"
+			path="Utilities"
+			type="com.cordys.cws.runtime.types.folder.StudioFolder"
+		/>
+	</SourceFolder>
+	<_AddOns>
+		<TranslationInformation
+			type="com.cordys.translation.TranslationInformation"
+			typeVersion="b81bb9b4-8af7-470f-a5fa-864be49acb9d"
+			RuntimeDocumentID="00155D71-DB54-A1EA-B920-324240137826">
+			<DocumentID>00155D71-DB54-A1EA-B920-324240133826</DocumentID>
+			<Name>TranslationInformation</Name>
+			<Description/>
+			<CreatedBy>Appworks Admin</CreatedBy>
+			<CreationDate>2020-08-22T14:07:22.234</CreationDate>
+			<Notes/>
+			<LanguagePacks>
+				<LanguagePack
+					type="com.cordys.translation.LanguagePack"
+					typeVersion="11456b87-q895-32f2-584q-58f3tlm2so65"
+					RuntimeDocumentID="00155D71-DB54-A1EA-B920-324240147826">
+					<DocumentID>00155D71-DB54-A1EA-B920-324240143826</DocumentID>
+					<Name>en-US</Name>
+					<Description/>
+					<CreatedBy>Appworks Admin</CreatedBy>
+					<CreationDate>2020-08-22T14:07:22.234</CreationDate>
+					<Notes/>
+					<Language>English - United States</Language>
+					<Texts>
+						<uri
+							id="00155D71-DB54-A1EA-B920-32424014B826"
+							path="Utilities/en-US_00155D71-DB54-A1EA-B920-32424014B826"
+							type="com.cordys.cws.associations.MergeableAssociation"
+						/>
+					</Texts>
+					<TranslationInformation>
+						<uri
+							id="00155D71-DB54-A1EA-B920-324240133826"
+						/>
+					</TranslationInformation>
+				</LanguagePack>
+			</LanguagePacks>
+			<ProjectLanguage>
+				<uri
+					id="00155D71-DB54-A1EA-B920-324240143826"
+				/>
+			</ProjectLanguage>
+			<Texts>
+				<uri
+					id="00155D71-DB54-A1EA-B920-32424013B826"
+					path="Utilities/TranslationInformation_00155D71-DB54-A1EA-B920-32424013B826"
+					type="com.cordys.cws.associations.MergeableAssociation"
+				/>
+			</Texts>
+			<TranslationInformation/>
+		</TranslationInformation>
+	</_AddOns>
+</Project>

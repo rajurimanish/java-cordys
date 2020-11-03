@@ -1,0 +1,76 @@
+
+<WSAppServerJavaArchiveSource
+	xmlns:cws="http://schemas.cordys.com/cws/1.0"
+	type="com.cordys.wsappserver.WSAppServerJavaArchiveSource"
+	RuntimeDocumentID="00155D71-DB54-A1EA-BC0E-BFAD5BF57826">
+	<DocumentID>00155D71-DB54-A1EA-BC0E-BFAD5BF53826</DocumentID>
+	<Name>HCTUtilsWsapp</Name>
+	<Description>HCTUtilsWsapp</Description>
+	<CreatedBy>Appworks Admin</CreatedBy>
+	<CreationDate>2020-09-06T13:15:41.136</CreationDate>
+	<Notes/>
+	<JarFileName>HCTUtilsWsapp</JarFileName>
+	<NamespacePrefix></NamespacePrefix>
+	<Dependencies>
+		<JavaArchiveReferenceDependency
+			type="com.cordys.cws.documenttypes.javaarchivesource.JavaArchiveReferenceDependency"
+			RuntimeDocumentID="00155D71-DB54-A1EA-BC0E-BFAD5BF4F826">
+			<DocumentID>00155D71-DB54-A1EA-BC0E-BFAD5BF4B826</DocumentID>
+			<Name>HCTUtilsWsapp_Dependency</Name>
+			<Description>HCTUtilsWsapp_Dependency</Description>
+			<CreatedBy>Appworks Admin</CreatedBy>
+			<CreationDate>2020-09-06T13:15:40.417</CreationDate>
+			<Notes/>
+			<DependsOnJAR>?CORDYS_INSTALL_DIR?/components/wsappserver/wsappserver.jar</DependsOnJAR>
+			<ISVPName></ISVPName>
+		</JavaArchiveReferenceDependency>
+		<JavaArchiveReferenceDependency
+			type="com.cordys.cws.documenttypes.javaarchivesource.JavaArchiveReferenceDependency"
+			RuntimeDocumentID="00155D71-DB54-A1EA-BC35-31B456DCB826">
+			<DocumentID>00155D71-DB54-A1EA-BC35-31B456DC7826</DocumentID>
+			<Name>Commonsio</Name>
+			<Description>Commonsio</Description>
+			<CreatedBy>Appworks Admin</CreatedBy>
+			<CreationDate>2020-09-07T07:00:09.134</CreationDate>
+			<Notes/>
+			<DependsOnJAR>?CORDYS_INSTALL_DIR?/CustomJars/commons-io-2.4.jar</DependsOnJAR>
+			<ISVPName></ISVPName>
+		</JavaArchiveReferenceDependency>
+		<JavaArchiveReferenceDependency
+			type="com.cordys.cws.documenttypes.javaarchivesource.JavaArchiveReferenceDependency"
+			RuntimeDocumentID="00155D71-DB54-A1EA-BC37-6D994C943826">
+			<DocumentID>00155D71-DB54-A1EA-BC37-6D994C93F826</DocumentID>
+			<Name>otdsclient</Name>
+			<Description>otdsclient</Description>
+			<CreatedBy>Appworks Admin</CreatedBy>
+			<CreationDate>2020-09-07T09:14:12.18</CreationDate>
+			<Notes/>
+			<DependsOnJAR>?CORDYS_INSTALL_DIR?/CustomJars/otds-client.jar</DependsOnJAR>
+			<ISVPName></ISVPName>
+		</JavaArchiveReferenceDependency>
+		<JavaArchiveReferenceDependency
+			type="com.cordys.cws.documenttypes.javaarchivesource.JavaArchiveReferenceDependency"
+			RuntimeDocumentID="00155D71-DB54-A1EA-BC37-6D994C8C7826">
+			<DocumentID>00155D71-DB54-A1EA-BC37-6D994C8C3826</DocumentID>
+			<Name>otdsbasic</Name>
+			<Description>otdsbasic</Description>
+			<CreatedBy>Appworks Admin</CreatedBy>
+			<CreationDate>2020-09-07T09:41:05.25</CreationDate>
+			<Notes/>
+			<DependsOnJAR>?CORDYS_INSTALL_DIR?/CustomJars/otds-basics.jar</DependsOnJAR>
+			<ISVPName></ISVPName>
+		</JavaArchiveReferenceDependency>
+	</Dependencies>
+	<SourceFolder>
+		<uri
+			id="00155D71-DB54-A1EA-BC0E-BFAD5BFA7826"
+			path="Utilities/Documentum/Java/Source"
+			type="com.cordys.cws.runtime.types.folder.StudioFolder"
+		/>
+	</SourceFolder>
+	<WSAppServerPackage>
+		<uri
+			id="00155D71-DB54-A1EA-BC0E-BFAD5BF6F826"
+		/>
+	</WSAppServerPackage>
+</WSAppServerJavaArchiveSource>

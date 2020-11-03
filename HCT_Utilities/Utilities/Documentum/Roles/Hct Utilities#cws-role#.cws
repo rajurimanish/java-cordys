@@ -1,0 +1,19 @@
+
+<RoleDesignTime
+	xmlns:cws="http://schemas.cordys.com/cws/1.0"
+	type="com.cordys.organization.role.RoleDesignTime"
+	typeVersion="0242a425-d150-11e7-e026-4d289331252b"
+	RuntimeDocumentID="00155D71-DB54-A1EB-83AB-5B05F846F82A">
+	<DocumentID>00155D71-DB54-A1EB-83AB-5B05F846B82A</DocumentID>
+	<Name>Hct Utilities</Name>
+	<Description>Hct Utilities</Description>
+	<CreatedBy>Appworks Admin</CreatedBy>
+	<CreationDate>2020-10-15T06:16:49.427</CreationDate>
+	<Notes/>
+	<DistinguishedName>cn=#roleName#, cn=#ISVPName#, #LDAPRoot#</DistinguishedName>
+	<ExposeForReuse>false</ExposeForReuse>
+	<type>Functional</type>
+	<Subroles/>
+	<Superroles/>
+	<configuredTasks/>
+</RoleDesignTime>

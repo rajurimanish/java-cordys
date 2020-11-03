@@ -1,0 +1,23 @@
+
+<TranslatedText
+	xmlns:cws="http://schemas.cordys.com/cws/1.0"
+	type="com.cordys.translation.TranslatedText"
+	RuntimeDocumentID="00155D71-DB54-A1EA-BC36-565ECF2B7826">
+	<DocumentID>00155D71-DB54-A1EA-BC36-565ECF2B3826</DocumentID>
+	<Name>00155D71-DB54-A1EA-BC36-565ECF2B3826</Name>
+	<Description>GetSamlArtByicket</Description>
+	<CreatedBy>Appworks Admin</CreatedBy>
+	<CreationDate>2020-09-07T07:13:13.764</CreationDate>
+	<Notes/>
+	<Text>GetSamlArtByicket</Text>
+	<Language>
+		<uri
+			id="00155D71-DB54-A1EA-B920-324240143826"
+		/>
+	</Language>
+	<TextIdentifier>
+		<uri
+			id="00155D71-DB54-A1EA-BC36-565ECF2AB826"
+		/>
+	</TextIdentifier>
+</TranslatedText>
