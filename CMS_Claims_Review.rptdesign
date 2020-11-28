@@ -1,0 +1,1119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23"
+	id="1">
+	<property name="createdBy">Eclipse BIRT Designer Version
+		4.4.0.v20150710-0101 Build &lt;4.2.3.v20150710-0101></property>
+	<list-property name="propertyBindings">
+		<structure>
+			<property name="name">queryText</property>
+			<property name="id">1884</property>
+		</structure>
+		<structure>
+			<property name="name">queryTimeOut</property>
+			<property name="id">1884</property>
+		</structure>
+		<structure>
+			<property name="name">rowFetchSize</property>
+			<property name="id">1884</property>
+		</structure>
+		<structure>
+			<property name="name">odaURL</property>
+			<property name="id">1883</property>
+		</structure>
+		<structure>
+			<property name="name">odaUser</property>
+			<property name="id">1883</property>
+		</structure>
+		<structure>
+			<property name="name">odaPassword</property>
+			<property name="id">1883</property>
+		</structure>
+		<structure>
+			<property name="name">odaDriverClass</property>
+			<property name="id">1883</property>
+		</structure>
+		<structure>
+			<property name="name">odaAutoCommit</property>
+			<property name="id">1883</property>
+		</structure>
+		<structure>
+			<property name="name">odaIsolationMode</property>
+			<property name="id">1883</property>
+		</structure>
+		<structure>
+			<property name="name">odaJndiName</property>
+			<property name="id">1883</property>
+		</structure>
+		<structure>
+			<property name="name">OdaConnProfileName</property>
+			<property name="id">1883</property>
+		</structure>
+		<structure>
+			<property name="name">OdaConnProfileStorePath</property>
+			<property name="id">1883</property>
+		</structure>
+	</list-property>
+	<property name="units">in</property>
+	<property name="theme">ThemesReportItems31.Modern</property>
+	<property name="iconFile">/templates/simple_listing.gif</property>
+	<property name="cheatSheet">org.eclipse.birt.report.designer.ui.cheatsheet.simplelisting</property>
+	<property name="layoutPreference">auto layout</property>
+	<property name="bidiLayoutOrientation">ltr</property>
+	<property name="imageDPI">96</property>
+	<list-property name="libraries">
+		<structure>
+			<property name="fileName">/ThemesReportItems31.rptlibrary</property>
+			<property name="namespace">ThemesReportItems31</property>
+		</structure>
+	</list-property>
+	<parameters>
+		<scalar-parameter name="InputFrom" id="2002">
+			<text-property name="promptText">Enter From Date</text-property>
+			<property name="valueType">static</property>
+			<property name="isRequired">true</property>
+			<property name="dataType">string</property>
+			<property name="distinct">true</property>
+			<simple-property-list name="defaultValue">
+				<value type="constant">2017-10-10 00:00:00.000</value>
+			</simple-property-list>
+			<list-property name="selectionList" />
+			<property name="paramType">simple</property>
+			<property name="concealValue">false</property>
+			<property name="controlType">text-box</property>
+			<structure name="format">
+				<property name="category">Unformatted</property>
+			</structure>
+		</scalar-parameter>
+		<scalar-parameter name="InputTo" id="2003">
+			<text-property name="promptText">Enter To Date</text-property>
+			<property name="valueType">static</property>
+			<property name="isRequired">true</property>
+			<property name="dataType">string</property>
+			<property name="distinct">true</property>
+			<simple-property-list name="defaultValue">
+				<value type="constant">2017-10-14 23:00:00.000</value>
+			</simple-property-list>
+			<list-property name="selectionList" />
+			<property name="paramType">simple</property>
+			<property name="concealValue">false</property>
+			<property name="controlType">text-box</property>
+			<structure name="format">
+				<property name="category">Unformatted</property>
+			</structure>
+		</scalar-parameter>
+	</parameters>
+	<data-sources>
+		<oda-data-source extensionID="org.eclipse.birt.report.data.oda.jdbc"
+			name="msig" id="1883">
+			<list-property name="privateDriverProperties">
+				<ex-property>
+					<name>metadataBidiFormatStr</name>
+					<value>ILYNN</value>
+				</ex-property>
+				<ex-property>
+					<name>disabledMetadataBidiFormatStr</name>
+				</ex-property>
+				<ex-property>
+					<name>contentBidiFormatStr</name>
+					<value>ILYNN</value>
+				</ex-property>
+				<ex-property>
+					<name>disabledContentBidiFormatStr</name>
+				</ex-property>
+			</list-property>
+			<property name="odaDriverClass">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>
+			<property name="odaURL">jdbc:sqlserver://10.140.93.102:1433;databasename=MSIG_DEV_02</property>
+			<property name="odaUser">sa</property>
+			<encrypted-property name="odaPassword"
+				encryptionID="base64">TXNpZzEyMzQqKCk=</encrypted-property>
+		</oda-data-source>
+	</data-sources>
+	<data-sets>
+		<oda-data-set
+			extensionID="org.eclipse.birt.report.data.oda.jdbc.JdbcSelectDataSet"
+			name="MSIG_CMS_CLAIMS_RESERVEUPDATE_AUDIT" id="1884">
+			<property name="nullsOrdering">nulls lowest</property>
+			<list-property name="columnHints">
+				<structure>
+					<property name="columnName">INPUTFROM</property>
+					<property name="analysis">dimension</property>
+					<text-property name="displayName">INPUTFROM</text-property>
+					<text-property name="heading">INPUTFROM</text-property>
+				</structure>
+				<structure>
+					<property name="columnName">INPUTTO</property>
+					<property name="analysis">dimension</property>
+					<text-property name="displayName">INPUTTO</text-property>
+					<text-property name="heading">INPUTTO</text-property>
+				</structure>
+				<structure>
+					<property name="columnName">CREATED_BY</property>
+					<property name="analysis">dimension</property>
+					<text-property name="displayName">CREATED_BY</text-property>
+					<text-property name="heading">CREATED_BY</text-property>
+				</structure>
+				<structure>
+					<property name="columnName">CREATED_ON</property>
+					<property name="analysis">dimension</property>
+					<text-property name="displayName">CREATED_ON</text-property>
+					<text-property name="heading">CREATED_ON</text-property>
+				</structure>
+				<structure>
+					<property name="columnName">CLAIMNO</property>
+					<property name="analysis">dimension</property>
+					<text-property name="displayName">CLAIMNO</text-property>
+					<text-property name="heading">CLAIMNO</text-property>
+				</structure>
+				<structure>
+					<property name="columnName">CASEID</property>
+					<property name="analysis">dimension</property>
+					<text-property name="displayName">CASEID</text-property>
+					<text-property name="heading">CASEID</text-property>
+				</structure>
+				<structure>
+					<property name="columnName">TRANSACTIONNO</property>
+					<property name="analysis">dimension</property>
+					<text-property name="displayName">TRANSACTIONNO</text-property>
+					<text-property name="heading">TRANSACTIONNO</text-property>
+				</structure>
+				<structure>
+					<property name="columnName">REVIEWERID</property>
+					<property name="analysis">dimension</property>
+					<text-property name="displayName">REVIEWERID</text-property>
+					<text-property name="heading">REVIEWERID</text-property>
+				</structure>
+				<structure>
+					<property name="columnName">REVIEWDATE</property>
+					<property name="analysis">dimension</property>
+					<text-property name="displayName">REVIEWDATE</text-property>
+					<text-property name="heading">REVIEWDATE</text-property>
+				</structure>
+				<structure>
+					<property name="columnName">MOVEMENTIND</property>
+					<property name="analysis">dimension</property>
+					<text-property name="displayName">MOVEMENTIND</text-property>
+					<text-property name="heading">MOVEMENTIND</text-property>
+				</structure>
+				<structure>
+					<property name="columnName">REVIEWCOMMENT1</property>
+					<property name="analysis">dimension</property>
+					<text-property name="displayName">REVIEWCOMMENT1</text-property>
+					<text-property name="heading">REVIEWCOMMENT1</text-property>
+				</structure>
+				<structure>
+					<property name="columnName">REVIEWCOMMENT2</property>
+					<property name="analysis">dimension</property>
+					<text-property name="displayName">REVIEWCOMMENT2</text-property>
+					<text-property name="heading">REVIEWCOMMENT2</text-property>
+				</structure>
+				<structure>
+					<property name="columnName">PREMCLASS</property>
+					<property name="analysis">dimension</property>
+					<text-property name="displayName">PREMCLASS</text-property>
+					<text-property name="heading">PREMCLASS</text-property>
+				</structure>
+				<structure>
+					<property name="columnName">RESERVECODE</property>
+					<property name="analysis">dimension</property>
+					<text-property name="displayName">RESERVECODE</text-property>
+					<text-property name="heading">RESERVECODE</text-property>
+				</structure>
+				<structure>
+					<property name="columnName">AMOUNT</property>
+					<property name="analysis">measure</property>
+					<text-property name="displayName">AMOUNT</text-property>
+					<text-property name="heading">AMOUNT</text-property>
+				</structure>
+				<structure>
+					<property name="columnName">BEFOREAMOUNT</property>
+					<property name="analysis">measure</property>
+					<text-property name="displayName">BEFOREAMOUNT</text-property>
+					<text-property name="heading">BEFOREAMOUNT</text-property>
+				</structure>
+				<structure>
+					<property name="columnName">MOVEMENTAMOUNT</property>
+					<property name="analysis">measure</property>
+					<text-property name="displayName">MOVEMENTAMOUNT</text-property>
+					<text-property name="heading">MOVEMENTAMOUNT</text-property>
+				</structure>
+				<structure>
+					<property name="columnName">STATUS</property>
+					<property name="analysis">dimension</property>
+					<text-property name="displayName">STATUS</text-property>
+					<text-property name="heading">STATUS</text-property>
+				</structure>
+				<structure>
+					<property name="columnName">UPDATEACTIONSTATUS</property>
+					<property name="analysis">dimension</property>
+					<text-property name="displayName">UPDATEACTIONSTATUS</text-property>
+					<text-property name="heading">UPDATEACTIONSTATUS</text-property>
+				</structure>
+				<structure>
+					<property name="columnName">UPDATEACTIONRESPONSE</property>
+					<property name="analysis">dimension</property>
+					<text-property name="displayName">UPDATEACTIONRESPONSE</text-property>
+					<text-property name="heading">UPDATEACTIONRESPONSE</text-property>
+				</structure>
+				<structure>
+					<property name="columnName">BUSINESSSTATUS</property>
+					<property name="analysis">dimension</property>
+					<text-property name="displayName">BUSINESSSTATUS</text-property>
+					<text-property name="heading">BUSINESSSTATUS</text-property>
+				</structure>
+				<structure>
+					<property name="columnName">LOB</property>
+					<property name="analysis">dimension</property>
+					<text-property name="displayName">LOB</text-property>
+					<text-property name="heading">LOB</text-property>
+				</structure>
+				<structure>
+					<property name="columnName">CLIAMHANDLER</property>
+					<property name="analysis">dimension</property>
+					<text-property name="displayName">CLIAMHANDLER</text-property>
+					<text-property name="heading">CLIAMHANDLER</text-property>
+				</structure>
+				<structure>
+					<property name="columnName">HANDLINGBRANCH</property>
+					<property name="analysis">dimension</property>
+					<text-property name="displayName">HANDLINGBRANCH</text-property>
+					<text-property name="heading">HANDLINGBRANCH</text-property>
+				</structure>
+			</list-property>
+			<list-property name="parameters">
+				<structure>
+					<property name="name">inputfrom</property>
+					<property name="paramName">InputFrom</property>
+					<property name="nativeName"></property>
+					<property name="dataType">dateTime</property>
+					<property name="nativeDataType">0</property>
+					<property name="position">1</property>
+					<expression name="defaultValue" type="javascript">new Date()</expression>
+					<property name="isOptional">false</property>
+					<property name="isInput">true</property>
+					<property name="isOutput">false</property>
+				</structure>
+				<structure>
+					<property name="name">inputto</property>
+					<property name="paramName">InputTo</property>
+					<property name="nativeName"></property>
+					<property name="dataType">dateTime</property>
+					<property name="nativeDataType">0</property>
+					<property name="position">2</property>
+					<expression name="defaultValue" type="javascript">new Date()</expression>
+					<property name="isOptional">false</property>
+					<property name="isInput">true</property>
+					<property name="isOutput">false</property>
+				</structure>
+			</list-property>
+			<structure name="cachedMetaData">
+				<list-property name="resultSet">
+					<structure>
+						<property name="position">1</property>
+						<property name="name">INPUTFROM</property>
+						<property name="dataType">date-time</property>
+					</structure>
+					<structure>
+						<property name="position">2</property>
+						<property name="name">INPUTTO</property>
+						<property name="dataType">date-time</property>
+					</structure>
+					<structure>
+						<property name="position">3</property>
+						<property name="name">CREATED_BY</property>
+						<property name="dataType">string</property>
+					</structure>
+					<structure>
+						<property name="position">4</property>
+						<property name="name">CREATED_ON</property>
+						<property name="dataType">date-time</property>
+					</structure>
+					<structure>
+						<property name="position">5</property>
+						<property name="name">CLAIMNO</property>
+						<property name="dataType">string</property>
+					</structure>
+					<structure>
+						<property name="position">6</property>
+						<property name="name">CASEID</property>
+						<property name="dataType">string</property>
+					</structure>
+					<structure>
+						<property name="position">7</property>
+						<property name="name">TRANSACTIONNO</property>
+						<property name="dataType">string</property>
+					</structure>
+					<structure>
+						<property name="position">8</property>
+						<property name="name">REVIEWERID</property>
+						<property name="dataType">string</property>
+					</structure>
+					<structure>
+						<property name="position">9</property>
+						<property name="name">REVIEWDATE</property>
+						<property name="dataType">date-time</property>
+					</structure>
+					<structure>
+						<property name="position">10</property>
+						<property name="name">MOVEMENTIND</property>
+						<property name="dataType">string</property>
+					</structure>
+					<structure>
+						<property name="position">11</property>
+						<property name="name">REVIEWCOMMENT1</property>
+						<property name="dataType">string</property>
+					</structure>
+					<structure>
+						<property name="position">12</property>
+						<property name="name">REVIEWCOMMENT2</property>
+						<property name="dataType">string</property>
+					</structure>
+					<structure>
+						<property name="position">13</property>
+						<property name="name">PREMCLASS</property>
+						<property name="dataType">string</property>
+					</structure>
+					<structure>
+						<property name="position">14</property>
+						<property name="name">RESERVECODE</property>
+						<property name="dataType">string</property>
+					</structure>
+					<structure>
+						<property name="position">15</property>
+						<property name="name">AMOUNT</property>
+						<property name="dataType">decimal</property>
+					</structure>
+					<structure>
+						<property name="position">16</property>
+						<property name="name">BEFOREAMOUNT</property>
+						<property name="dataType">decimal</property>
+					</structure>
+					<structure>
+						<property name="position">17</property>
+						<property name="name">MOVEMENTAMOUNT</property>
+						<property name="dataType">decimal</property>
+					</structure>
+					<structure>
+						<property name="position">18</property>
+						<property name="name">STATUS</property>
+						<property name="dataType">string</property>
+					</structure>
+					<structure>
+						<property name="position">19</property>
+						<property name="name">UPDATEACTIONSTATUS</property>
+						<property name="dataType">string</property>
+					</structure>
+					<structure>
+						<property name="position">20</property>
+						<property name="name">UPDATEACTIONRESPONSE</property>
+						<property name="dataType">string</property>
+					</structure>
+					<structure>
+						<property name="position">21</property>
+						<property name="name">BUSINESSSTATUS</property>
+						<property name="dataType">string</property>
+					</structure>
+					<structure>
+						<property name="position">22</property>
+						<property name="name">LOB</property>
+						<property name="dataType">string</property>
+					</structure>
+					<structure>
+						<property name="position">23</property>
+						<property name="name">CLIAMHANDLER</property>
+						<property name="dataType">string</property>
+					</structure>
+					<structure>
+						<property name="position">24</property>
+						<property name="name">HANDLINGBRANCH</property>
+						<property name="dataType">string</property>
+					</structure>
+				</list-property>
+			</structure>
+			<property name="dataSource">msig</property>
+			<list-property name="resultSet">
+				<structure>
+					<property name="position">1</property>
+					<property name="name">INPUTFROM</property>
+					<property name="nativeName">INPUTFROM</property>
+					<property name="dataType">date-time</property>
+					<property name="nativeDataType">93</property>
+				</structure>
+				<structure>
+					<property name="position">2</property>
+					<property name="name">INPUTTO</property>
+					<property name="nativeName">INPUTTO</property>
+					<property name="dataType">date-time</property>
+					<property name="nativeDataType">93</property>
+				</structure>
+				<structure>
+					<property name="position">3</property>
+					<property name="name">CREATED_BY</property>
+					<property name="nativeName">CREATED_BY</property>
+					<property name="dataType">string</property>
+					<property name="nativeDataType">12</property>
+				</structure>
+				<structure>
+					<property name="position">4</property>
+					<property name="name">CREATED_ON</property>
+					<property name="nativeName">CREATED_ON</property>
+					<property name="dataType">date-time</property>
+					<property name="nativeDataType">93</property>
+				</structure>
+				<structure>
+					<property name="position">5</property>
+					<property name="name">CLAIMNO</property>
+					<property name="nativeName">CLAIMNO</property>
+					<property name="dataType">string</property>
+					<property name="nativeDataType">12</property>
+				</structure>
+				<structure>
+					<property name="position">6</property>
+					<property name="name">CASEID</property>
+					<property name="nativeName">CASEID</property>
+					<property name="dataType">string</property>
+					<property name="nativeDataType">12</property>
+				</structure>
+				<structure>
+					<property name="position">7</property>
+					<property name="name">TRANSACTIONNO</property>
+					<property name="nativeName">TRANSACTIONNO</property>
+					<property name="dataType">string</property>
+					<property name="nativeDataType">12</property>
+				</structure>
+				<structure>
+					<property name="position">8</property>
+					<property name="name">REVIEWERID</property>
+					<property name="nativeName">REVIEWERID</property>
+					<property name="dataType">string</property>
+					<property name="nativeDataType">12</property>
+				</structure>
+				<structure>
+					<property name="position">9</property>
+					<property name="name">REVIEWDATE</property>
+					<property name="nativeName">REVIEWDATE</property>
+					<property name="dataType">date-time</property>
+					<property name="nativeDataType">93</property>
+				</structure>
+				<structure>
+					<property name="position">10</property>
+					<property name="name">MOVEMENTIND</property>
+					<property name="nativeName">MOVEMENTIND</property>
+					<property name="dataType">string</property>
+					<property name="nativeDataType">12</property>
+				</structure>
+				<structure>
+					<property name="position">11</property>
+					<property name="name">REVIEWCOMMENT1</property>
+					<property name="nativeName">REVIEWCOMMENT1</property>
+					<property name="dataType">string</property>
+					<property name="nativeDataType">12</property>
+				</structure>
+				<structure>
+					<property name="position">12</property>
+					<property name="name">REVIEWCOMMENT2</property>
+					<property name="nativeName">REVIEWCOMMENT2</property>
+					<property name="dataType">string</property>
+					<property name="nativeDataType">12</property>
+				</structure>
+				<structure>
+					<property name="position">13</property>
+					<property name="name">PREMCLASS</property>
+					<property name="nativeName">PREMCLASS</property>
+					<property name="dataType">string</property>
+					<property name="nativeDataType">12</property>
+				</structure>
+				<structure>
+					<property name="position">14</property>
+					<property name="name">RESERVECODE</property>
+					<property name="nativeName">RESERVECODE</property>
+					<property name="dataType">string</property>
+					<property name="nativeDataType">12</property>
+				</structure>
+				<structure>
+					<property name="position">15</property>
+					<property name="name">AMOUNT</property>
+					<property name="nativeName">AMOUNT</property>
+					<property name="dataType">decimal</property>
+					<property name="nativeDataType">3</property>
+				</structure>
+				<structure>
+					<property name="position">16</property>
+					<property name="name">BEFOREAMOUNT</property>
+					<property name="nativeName">BEFOREAMOUNT</property>
+					<property name="dataType">decimal</property>
+					<property name="nativeDataType">3</property>
+				</structure>
+				<structure>
+					<property name="position">17</property>
+					<property name="name">MOVEMENTAMOUNT</property>
+					<property name="nativeName">MOVEMENTAMOUNT</property>
+					<property name="dataType">decimal</property>
+					<property name="nativeDataType">3</property>
+				</structure>
+				<structure>
+					<property name="position">18</property>
+					<property name="name">STATUS</property>
+					<property name="nativeName">STATUS</property>
+					<property name="dataType">string</property>
+					<property name="nativeDataType">12</property>
+				</structure>
+				<structure>
+					<property name="position">19</property>
+					<property name="name">UPDATEACTIONSTATUS</property>
+					<property name="nativeName">UPDATEACTIONSTATUS</property>
+					<property name="dataType">string</property>
+					<property name="nativeDataType">12</property>
+				</structure>
+				<structure>
+					<property name="position">20</property>
+					<property name="name">UPDATEACTIONRESPONSE</property>
+					<property name="nativeName">UPDATEACTIONRESPONSE</property>
+					<property name="dataType">string</property>
+					<property name="nativeDataType">12</property>
+				</structure>
+				<structure>
+					<property name="position">21</property>
+					<property name="name">BUSINESSSTATUS</property>
+					<property name="nativeName">BUSINESSSTATUS</property>
+					<property name="dataType">string</property>
+					<property name="nativeDataType">12</property>
+				</structure>
+				<structure>
+					<property name="position">22</property>
+					<property name="name">LOB</property>
+					<property name="nativeName">LOB</property>
+					<property name="dataType">string</property>
+					<property name="nativeDataType">12</property>
+				</structure>
+				<structure>
+					<property name="position">23</property>
+					<property name="name">CLIAMHANDLER</property>
+					<property name="nativeName">CLIAMHANDLER</property>
+					<property name="dataType">string</property>
+					<property name="nativeDataType">12</property>
+				</structure>
+				<structure>
+					<property name="position">24</property>
+					<property name="name">HANDLINGBRANCH</property>
+					<property name="nativeName">HANDLINGBRANCH</property>
+					<property name="dataType">string</property>
+					<property name="nativeDataType">12</property>
+				</structure>
+			</list-property>
+			<xml-property name="queryText"><![CDATA[SELECT [INPUTFROM]
+      ,[INPUTTO]
+      ,[CREATED_BY]
+      ,[CREATED_ON]
+      ,[CLAIMNO]
+      ,[CASEID]
+      ,[TRANSACTIONNO]
+      ,[REVIEWERID]
+      ,[REVIEWDATE]
+      ,[MOVEMENTIND]
+      ,[REVIEWCOMMENT1]
+      ,[REVIEWCOMMENT2]
+      ,[PREMCLASS]
+      ,[RESERVECODE]
+      ,[AMOUNT]
+      ,[BEFOREAMOUNT]
+      ,[MOVEMENTAMOUNT]
+      ,[STATUS]
+      ,[UPDATEACTIONSTATUS]
+      ,[UPDATEACTIONRESPONSE]
+      ,[BUSINESSSTATUS]
+      ,[LOB]
+      ,[CLIAMHANDLER]
+      ,[HANDLINGBRANCH]
+  FROM [MSIG_CMS_CLAIMS_RESERVEUPDATE_AUDIT]
+  WHERE INPUTFROM >=? AND INPUTTO <=? 
+ ]]></xml-property>
+		</oda-data-set>
+	</data-sets>
+	<styles>
+		<style name="report" id="24">
+			<property name="fontFamily">sans-serif</property>
+			<property name="fontSize">10pt</property>
+		</style>
+	</styles>
+	<page-setup>
+		<simple-master-page name="Simple MasterPage" id="2">
+			<property name="orientation">landscape</property>
+			<property name="rightMargin">0in</property>
+			<property name="backgroundColor">white</property>
+			<page-footer>
+				<text id="3">
+					<property name="contentType">html</property>
+					<text-property name="content"><![CDATA[<value-of>new Date()</value-of>]]></text-property>
+				</text>
+			</page-footer>
+		</simple-master-page>
+	</page-setup>
+	<body>
+		<table id="4">
+			<property name="borderBottomColor">#000000</property>
+			<property name="borderBottomStyle">ridge</property>
+			<property name="width">100%</property>
+			<property name="dataSet">MSIG_CMS_CLAIMS_RESERVEUPDATE_AUDIT</property>
+			<list-property name="boundDataColumns">
+				<structure>
+					<property name="name">CLAIMNO</property>
+					<text-property name="displayName">CLAIMNO</text-property>
+					<expression name="expression" type="javascript">dataSetRow["CLAIMNO"]</expression>
+					<property name="dataType">string</property>
+				</structure>
+				<structure>
+					<property name="name">CASEID</property>
+					<text-property name="displayName">CASEID</text-property>
+					<expression name="expression" type="javascript">dataSetRow["CASEID"]</expression>
+					<property name="dataType">string</property>
+				</structure>
+				<structure>
+					<property name="name">TRANSACTIONNO</property>
+					<text-property name="displayName">TRANSACTIONNO</text-property>
+					<expression name="expression" type="javascript">dataSetRow["TRANSACTIONNO"]</expression>
+					<property name="dataType">string</property>
+				</structure>
+				<structure>
+					<property name="name">REVIEWERID</property>
+					<text-property name="displayName">REVIEWERID</text-property>
+					<expression name="expression" type="javascript">dataSetRow["REVIEWERID"]</expression>
+					<property name="dataType">string</property>
+				</structure>
+				<structure>
+					<property name="name">REVIEWDATE</property>
+					<text-property name="displayName">REVIEWDATE</text-property>
+					<expression name="expression" type="javascript">dataSetRow["REVIEWDATE"]</expression>
+					<property name="dataType">date-time</property>
+				</structure>
+				<structure>
+					<property name="name">MOVEMENTIND</property>
+					<text-property name="displayName">MOVEMENTIND</text-property>
+					<expression name="expression" type="javascript">dataSetRow["MOVEMENTIND"]</expression>
+					<property name="dataType">string</property>
+				</structure>
+				<structure>
+					<property name="name">REVIEWCOMMENT1</property>
+					<text-property name="displayName">REVIEWCOMMENT1</text-property>
+					<expression name="expression" type="javascript">dataSetRow["REVIEWCOMMENT1"]</expression>
+					<property name="dataType">string</property>
+				</structure>
+				<structure>
+					<property name="name">REVIEWCOMMENT2</property>
+					<text-property name="displayName">REVIEWCOMMENT2</text-property>
+					<expression name="expression" type="javascript">dataSetRow["REVIEWCOMMENT2"]</expression>
+					<property name="dataType">string</property>
+				</structure>
+				<structure>
+					<property name="name">PREMCLASS</property>
+					<text-property name="displayName">PREMCLASS</text-property>
+					<expression name="expression" type="javascript">dataSetRow["PREMCLASS"]</expression>
+					<property name="dataType">string</property>
+				</structure>
+				<structure>
+					<property name="name">RESERVECODE</property>
+					<text-property name="displayName">RESERVECODE</text-property>
+					<expression name="expression" type="javascript">dataSetRow["RESERVECODE"]</expression>
+					<property name="dataType">string</property>
+				</structure>
+				<structure>
+					<property name="name">AMOUNT</property>
+					<text-property name="displayName">AMOUNT</text-property>
+					<expression name="expression" type="javascript">dataSetRow["AMOUNT"]</expression>
+					<property name="dataType">decimal</property>
+				</structure>
+				<structure>
+					<property name="name">BEFOREAMOUNT</property>
+					<text-property name="displayName">BEFOREAMOUNT</text-property>
+					<expression name="expression" type="javascript">dataSetRow["BEFOREAMOUNT"]</expression>
+					<property name="dataType">decimal</property>
+				</structure>
+				<structure>
+					<property name="name">MOVEMENTAMOUNT</property>
+					<text-property name="displayName">MOVEMENTAMOUNT</text-property>
+					<expression name="expression" type="javascript">dataSetRow["MOVEMENTAMOUNT"]</expression>
+					<property name="dataType">decimal</property>
+				</structure>
+				<structure>
+					<property name="name">STATUS</property>
+					<text-property name="displayName">STATUS</text-property>
+					<expression name="expression" type="javascript">dataSetRow["STATUS"]</expression>
+					<property name="dataType">string</property>
+				</structure>
+				<structure>
+					<property name="name">UPDATEACTIONSTATUS</property>
+					<text-property name="displayName">UPDATEACTIONSTATUS</text-property>
+					<expression name="expression" type="javascript">dataSetRow["UPDATEACTIONSTATUS"]</expression>
+					<property name="dataType">string</property>
+				</structure>
+				<structure>
+					<property name="name">UPDATEACTIONRESPONSE</property>
+					<text-property name="displayName">UPDATEACTIONRESPONSE</text-property>
+					<expression name="expression" type="javascript">dataSetRow["UPDATEACTIONRESPONSE"]</expression>
+					<property name="dataType">string</property>
+				</structure>
+				<structure>
+					<property name="name">BUSINESSSTATUS</property>
+					<text-property name="displayName">BUSINESSSTATUS</text-property>
+					<expression name="expression" type="javascript">dataSetRow["BUSINESSSTATUS"]</expression>
+					<property name="dataType">string</property>
+				</structure>
+				<structure>
+					<property name="name">LOB</property>
+					<text-property name="displayName">LOB</text-property>
+					<expression name="expression" type="javascript">dataSetRow["LOB"]</expression>
+					<property name="dataType">string</property>
+				</structure>
+				<structure>
+					<property name="name">CLIAMHANDLER</property>
+					<text-property name="displayName">CLIAMHANDLER</text-property>
+					<expression name="expression" type="javascript">dataSetRow["CLIAMHANDLER"]</expression>
+					<property name="dataType">string</property>
+				</structure>
+				<structure>
+					<property name="name">HANDLINGBRANCH</property>
+					<text-property name="displayName">HANDLINGBRANCH</text-property>
+					<expression name="expression" type="javascript">dataSetRow["HANDLINGBRANCH"]</expression>
+					<property name="dataType">string</property>
+				</structure>
+				<structure>
+					<property name="name">ID</property>
+					<text-property name="displayName">TOTAL</text-property>
+					<property name="dataType">integer</property>
+					<property name="aggregateFunction">COUNT</property>
+					<list-property name="arguments">
+						<structure>
+							<property name="name">Expression</property>
+						</structure>
+					</list-property>
+					<property name="allowExport">true</property>
+				</structure>
+				<structure>
+					<property name="name">INPUTFROM</property>
+					<text-property name="displayName">INPUTFROM</text-property>
+					<expression name="expression" type="javascript">dataSetRow["INPUTFROM"]</expression>
+					<property name="dataType">date-time</property>
+				</structure>
+				<structure>
+					<property name="name">*</property>
+					<text-property name="displayName">Total</text-property>
+					<property name="dataType">integer</property>
+					<property name="aggregateFunction">COUNT</property>
+					<list-property name="arguments">
+						<structure>
+							<property name="name">Expression</property>
+						</structure>
+					</list-property>
+					<property name="allowExport">true</property>
+				</structure>
+				<structure>
+					<property name="name">Column Binding</property>
+					<expression name="expression" type="javascript">row.__rownum+1</expression>
+					<property name="dataType">string</property>
+					<property name="allowExport">true</property>
+				</structure>
+			</list-property>
+			<property name="pageBreakInterval">50</property>
+			<column id="1889" />
+			<column id="1962" />
+			<column id="1967" />
+			<column id="1972" />
+			<column id="20" />
+			<column id="21" />
+			<column id="22" />
+			<column id="1921" />
+			<column id="1926" />
+			<column id="1931" />
+			<column id="1936" />
+			<column id="1941" />
+			<column id="1946" />
+			<column id="1951" />
+			<column id="1897" />
+			<column id="1901" />
+			<column id="1905" />
+			<column id="1909" />
+			<column id="23" />
+			<column id="1893" />
+			<column id="1957" />
+			<header>
+				<row id="5">
+					<property name="backgroundColor">#FFFF80</property>
+					<property name="color">#000000</property>
+					<property name="borderBottomStyle">solid</property>
+					<property name="borderBottomWidth">medium</property>
+					<property name="borderLeftStyle">solid</property>
+					<property name="borderLeftWidth">medium</property>
+					<property name="borderRightStyle">solid</property>
+					<property name="borderRightWidth">medium</property>
+					<property name="borderTopStyle">solid</property>
+					<property name="borderTopWidth">medium</property>
+					<cell id="1886">
+						<label id="1910">
+							<property name="backgroundColor">#FFFF80</property>
+							<text-property name="text">No</text-property>
+						</label>
+					</cell>
+					<cell id="1959">
+						<label id="1963">
+							<property name="backgroundColor">#FFFF80</property>
+							<text-property name="text">LOB</text-property>
+						</label>
+					</cell>
+					<cell id="1964">
+						<label id="1968">
+							<property name="backgroundColor">#FFFF80</property>
+							<text-property name="text">CH</text-property>
+						</label>
+					</cell>
+					<cell id="1969">
+						<label id="1973">
+							<property name="backgroundColor">#FFFF80</property>
+							<text-property name="text">Handle Branch</text-property>
+						</label>
+					</cell>
+					<cell id="6">
+						<label id="1885">
+							<property name="backgroundColor">#FFFF80</property>
+							<text-property name="text">Claim No</text-property>
+						</label>
+					</cell>
+					<cell id="7">
+						<label id="1911">
+							<property name="backgroundColor">#FFFF80</property>
+							<text-property name="text">Case ID</text-property>
+						</label>
+					</cell>
+					<cell id="8">
+						<label id="1912">
+							<property name="backgroundColor">#FFFF80</property>
+							<text-property name="text">Tran No</text-property>
+						</label>
+					</cell>
+					<cell id="1918">
+						<label id="1922">
+							<property name="backgroundColor">#FFFF80</property>
+							<text-property name="text">Prem Class</text-property>
+						</label>
+					</cell>
+					<cell id="1923">
+						<label id="1927">
+							<property name="backgroundColor">#FFFF80</property>
+							<text-property name="text">Reserve Code</text-property>
+						</label>
+					</cell>
+					<cell id="1928">
+						<label id="1932">
+							<property name="backgroundColor">#FFFF80</property>
+							<text-property name="text">Latest Amount</text-property>
+						</label>
+					</cell>
+					<cell id="1933">
+						<label id="1937">
+							<property name="backgroundColor">#FFFF80</property>
+							<text-property name="text">Before Amount</text-property>
+						</label>
+					</cell>
+					<cell id="1938">
+						<label id="1942">
+							<property name="backgroundColor">#FFFF80</property>
+							<text-property name="text">Movement Amount</text-property>
+						</label>
+					</cell>
+					<cell id="1943">
+						<label id="1947">
+							<property name="backgroundColor">#FFFF80</property>
+							<text-property name="text">P400 Status</text-property>
+						</label>
+					</cell>
+					<cell id="1948">
+						<label id="1952">
+							<property name="backgroundColor">#FFFF80</property>
+							<text-property name="text">CMS Status</text-property>
+						</label>
+					</cell>
+					<cell id="1894">
+						<label id="1913">
+							<property name="backgroundColor">#FFFF80</property>
+							<text-property name="text">Reviewer Id</text-property>
+						</label>
+					</cell>
+					<cell id="1898">
+						<label id="1914">
+							<property name="backgroundColor">#FFFF80</property>
+							<text-property name="text">Review Date</text-property>
+						</label>
+					</cell>
+					<cell id="1902">
+						<label id="1915">
+							<property name="backgroundColor">#FFFF80</property>
+							<text-property name="text">Movement Ind</text-property>
+						</label>
+					</cell>
+					<cell id="1906">
+						<label id="1916">
+							<property name="backgroundColor">#FFFF80</property>
+							<text-property name="text">Review Comment1</text-property>
+						</label>
+					</cell>
+					<cell id="9">
+						<label id="1917">
+							<property name="backgroundColor">#FFFF80</property>
+							<text-property name="text">Review Comment2</text-property>
+						</label>
+					</cell>
+					<cell id="1890">
+						<label id="1953">
+							<property name="backgroundColor">#FFFF80</property>
+							<text-property name="text">Job Status</text-property>
+						</label>
+					</cell>
+					<cell id="1954">
+						<label id="1958">
+							<property name="backgroundColor">#FFFF80</property>
+							<text-property name="text">Job Response</text-property>
+						</label>
+					</cell>
+				</row>
+			</header>
+			<detail>
+				<row id="10">
+					<cell id="1887">
+						<data id="2001">
+							<property name="resultSetColumn">Column Binding</property>
+						</data>
+					</cell>
+					<cell id="1960">
+						<data id="1975">
+							<property name="resultSetColumn">LOB</property>
+						</data>
+					</cell>
+					<cell id="1965">
+						<data id="1976">
+							<property name="resultSetColumn">CLIAMHANDLER</property>
+						</data>
+					</cell>
+					<cell id="1970">
+						<data id="1977">
+							<property name="resultSetColumn">HANDLINGBRANCH</property>
+						</data>
+					</cell>
+					<cell id="11">
+						<data id="1978">
+							<property name="resultSetColumn">CLAIMNO</property>
+						</data>
+					</cell>
+					<cell id="12">
+						<data id="1979">
+							<property name="resultSetColumn">CASEID</property>
+						</data>
+					</cell>
+					<cell id="13">
+						<data id="1980">
+							<property name="resultSetColumn">TRANSACTIONNO</property>
+						</data>
+					</cell>
+					<cell id="1919">
+						<data id="1981">
+							<property name="resultSetColumn">PREMCLASS</property>
+						</data>
+					</cell>
+					<cell id="1924">
+						<data id="1982">
+							<property name="resultSetColumn">RESERVECODE</property>
+						</data>
+					</cell>
+					<cell id="1929">
+						<data id="1983">
+							<property name="resultSetColumn">AMOUNT</property>
+						</data>
+					</cell>
+					<cell id="1934">
+						<data id="1984">
+							<property name="resultSetColumn">BEFOREAMOUNT</property>
+						</data>
+					</cell>
+					<cell id="1939">
+						<data id="1985">
+							<property name="resultSetColumn">MOVEMENTAMOUNT</property>
+						</data>
+					</cell>
+					<cell id="1944">
+						<data id="1986">
+							<property name="resultSetColumn">STATUS</property>
+						</data>
+					</cell>
+					<cell id="1949">
+						<data id="1987">
+							<property name="resultSetColumn">BUSINESSSTATUS</property>
+						</data>
+					</cell>
+					<cell id="1895">
+						<data id="1988">
+							<property name="resultSetColumn">REVIEWERID</property>
+						</data>
+					</cell>
+					<cell id="1899">
+						<data id="1989">
+							<property name="resultSetColumn">REVIEWDATE</property>
+						</data>
+					</cell>
+					<cell id="1903">
+						<data id="1990">
+							<property name="resultSetColumn">MOVEMENTIND</property>
+						</data>
+					</cell>
+					<cell id="1907">
+						<data id="1991">
+							<property name="resultSetColumn">REVIEWCOMMENT1</property>
+						</data>
+					</cell>
+					<cell id="14">
+						<data id="1992">
+							<property name="resultSetColumn">REVIEWCOMMENT2</property>
+						</data>
+					</cell>
+					<cell id="1891">
+						<data id="1993">
+							<property name="resultSetColumn">UPDATEACTIONSTATUS</property>
+						</data>
+					</cell>
+					<cell id="1955">
+						<data id="2004">
+							<property name="resultSetColumn">UPDATEACTIONRESPONSE</property>
+						</data>
+					</cell>
+				</row>
+			</detail>
+			<footer>
+				<row id="15">
+					<cell id="1888" />
+					<cell id="1961" />
+					<cell id="1966" />
+					<cell id="1971" />
+					<cell id="16" />
+					<cell id="17" />
+					<cell id="18" />
+					<cell id="1920" />
+					<cell id="1925" />
+					<cell id="1930" />
+					<cell id="1935" />
+					<cell id="1940" />
+					<cell id="1945" />
+					<cell id="1950" />
+					<cell id="1896" />
+					<cell id="1900" />
+					<cell id="1904" />
+					<cell id="1908" />
+					<cell id="19" />
+					<cell id="1892" />
+					<cell id="1956" />
+				</row>
+			</footer>
+		</table>
+	</body>
+	<property name="pageVariables">
+		<variable-element name="Seq">
+			<expression name="value" type="javascript">1</expression>
+			<property name="type">report</property>
+		</variable-element>
+	</property>
+</report>
